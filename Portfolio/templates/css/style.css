@@ -121,29 +121,27 @@ hr {
 }
 
 
-.floating-profile {
-  position: absolute;
-  top: 60px;
-  left: 40px;
-  width: 150px;
-  height: 150px;
+.hero-profile {
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #6de3b4;
-  z-index: 1000;
+  border: 4px solid #00ffaa;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
-.floating-profile:hover {
-  transform: scale(1.1) rotate(1deg);
+.hero-profile:hover {
+  transform: scale(1.05) rotate(1deg);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .floating-profile {
-    width: 100px;
-    height: 100px;
-    top: 10px;
-    left: 10px;
+  .hero-profile {
+    width: 130px;
+    height: 130px;
   }
 }
 
